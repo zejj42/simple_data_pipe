@@ -1,0 +1,6 @@
+pipeline.conf
+data
+orders_extract.csv
+__pycache__/
+env
+.DS_Store
