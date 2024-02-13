@@ -15,9 +15,8 @@ class S3Wrapper(StorageServiceWrapper):
             aws_secret_access_key=self.config["secret_key"],
         )
 
-    def upload_file(self, file_path, bucket, object_name=None):
+    def upload_file(self, file_path, bucket):
         try:
-
             timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
             object_name = f"{timestamp}_{os.path.basename(file_path)}"
             self.s3_client.upload_file(file_path, bucket, object_name)
