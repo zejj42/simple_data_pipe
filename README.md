@@ -62,6 +62,6 @@ Update the config/pipeline.conf file with the necessary database connection para
 
 Run the main script to execute the data pipeline:
 
-    ```bash
+   ```bash
     python -m src.main
-    ```
+   ```
